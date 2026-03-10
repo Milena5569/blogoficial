@@ -19,7 +19,11 @@ function walk(dir, depth = 0) {
     output += `${indent}- ${file}\n`;
 
     if (stat.isDirectory()) {
-      output += walk(full, depth + 1);
+      // Skip build artifacts and generated directories
+      const skipDirs = ["dist", ".astro", ".vercel", ".next"];
+      if (!skipDirs.includes(file)) {
+        output += walk(full, depth + 1);
+      }
     }
   }
 

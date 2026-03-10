@@ -4,3 +4,7 @@ dist
 build
 .cache
 .DS_Store
+**/node_modules
+**/.astro
+**/.vercel
+**/.next

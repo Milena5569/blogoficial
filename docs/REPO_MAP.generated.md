@@ -2,14 +2,52 @@
 
 Generated automatically.
 
-- copilot-instructions.md
+- blog
+  - astro.config.mjs
+  - dist
+  - package-lock.json
+  - package.json
+  - public
+  - src
+    - components
+      - CommentSection.jsx
+      - Footer.astro
+      - LikeButton.jsx
+      - SiteHeader.astro
+    - layouts
+      - BaseLayout.astro
+    - lib
+      - api.js
+    - styles
+      - global.css
+  - tailwind.config.mjs
+  - tsconfig.json
+- cms
+  - next-env.d.ts
+  - package.json
+  - pnpm-lock.yaml
+  - src
+    - app
+      - (payload)
+        - admin
+    - collections
+      - Authors.ts
+      - Categories.ts
+      - Media.ts
+      - Posts.ts
+      - Tags.ts
+      - Users.ts
+    - payload.config.ts
+  - tsconfig.json
 - docs
-- generate-repo-map.mjs
-- migrate-supabase-to-payload.mjs
+  - PROJECT_STATUS.md
+  - REPO_MAP.generated.md
+  - ROADMAP_P0.md
+  - TEST_STRATEGY.md
 - package-lock.json
 - package.json
-- PROJECT_STATUS.md
 - README.md
-- ROADMAP_P0.md
-- TEST_STRATEGY.md
+- scripts
+  - generate-repo-map.mjs
+  - migrate-supabase-to-payload.mjs
 

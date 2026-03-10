@@ -1,0 +1,9 @@
+{
+  "name": "vivatdah-blog",
+  "private": true,
+  "scripts": {
+    "build": "astro build",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  }
+}

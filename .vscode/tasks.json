@@ -1,0 +1,64 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "dev",
+      "type": "shell",
+      "command": "npm run dev",
+      "problemMatcher": []
+    },
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "npm run build",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "lint",
+      "type": "shell",
+      "command": "npm run lint",
+      "problemMatcher": []
+    },
+    {
+      "label": "typecheck",
+      "type": "shell",
+      "command": "npm run typecheck",
+      "problemMatcher": []
+    },
+    {
+      "label": "test",
+      "type": "shell",
+      "command": "npm run test",
+      "problemMatcher": []
+    },
+    {
+      "label": "validate",
+      "type": "shell",
+      "command": "npm run build && npm run lint && npm run typecheck",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "generate:payload-types",
+      "type": "shell",
+      "command": "npm run payload:generate-types",
+      "problemMatcher": []
+    },
+    {
+      "label": "repo:map",
+      "type": "shell",
+      "command": "node ./scripts/generate-repo-map.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "migrate:supabase",
+      "type": "shell",
+      "command": "node ./scripts/migrate-supabase-to-payload.mjs",
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,71 +1,74 @@
-# Project Status
-
-## Project
-VivaTDAH Blog Hub
-
-## Architecture Goal
-Transform the blog into a **Content + Growth Platform** operating under the **Absolute Diamond Standard**.
-
-## Current Stack
-
-Backend  
-Payload CMS v3
-
-Database  
-MongoDB
-
-Frontend  
-Astro 5 (SSR)
-
-Interactive UI  
-React Islands
-
-Styling  
-Tailwind CSS + CSS Variables
-
-Deployment  
-Vercel
-
-Language  
-TypeScript
-
----
-
-# Current State
-
-The project already contains the base stack and infrastructure.
-
-However, it currently behaves as a **traditional blog**, not as a full content platform.
-
-Key structural improvements are required.
-
----
-
-# Known Gaps
-
-• Posts schema lacks SEO / Journey / Conversion / Trust tabs  
-• Authors schema lacks credibility metadata  
-• CMS bridge still uses JavaScript (api.js)  
-• Dynamic article route not implemented  
-• SEO component missing  
-• Comments and likes still rely on Supabase  
-• No centralized moderation workflow
-
----
-
-# Architectural Risks
-
-1. Data fragmentation between Payload and Supabase  
-2. Lack of structured SEO metadata  
-3. Lack of article route and layout  
-4. Missing type contracts between CMS and frontend
-
----
-
 # Current Errors (Baseline)
 
-To be filled after running:
+## Baseline Execution
 
-npm run build  
-npm run lint  
-npm run typecheck
+### Dependency installation
+
+Status: completed, but incomplete environment detected
+
+Notes:
+
+- `npm install` completed successfully
+- output indicates only 1 package was audited
+- this suggests the current `package.json` does not include the real project dependencies
+
+### build
+
+Status: failed
+
+Notes:
+
+- `astro` is not recognized as an internal or external command
+- Astro CLI is not available in the current local environment
+
+### lint
+
+Status: failed
+
+Notes:
+
+- `eslint` is not recognized as an internal or external command
+- ESLint is not available in the current local environment
+
+### typecheck
+
+Status: failed
+
+Notes:
+
+- `tsc` is not recognized as an internal or external command
+- TypeScript compiler is not available in the current local environment
+
+## Relevant Warnings
+
+- none
+
+## Critical Errors
+
+- build failed because Astro CLI is unavailable
+- lint failed because ESLint is unavailable
+- typecheck failed because TypeScript compiler is unavailable
+
+## Baseline Gaps
+
+- current `package.json` does not appear to represent the real application dependencies
+- baseline cannot be considered technically valid until the real dependency manifest is restored
+
+## Baseline Observation
+
+At this stage, the repository contains only the bootstrap governance layer.
+
+The application source code has not yet been generated.
+
+Because the actual Astro/Payload project files do not exist yet, build/lint/typecheck cannot run successfully.
+
+This is expected and does not indicate an application failure.
+
+## Repository Update
+
+The repository now includes legacy project assets:
+
+- frontend application inside `blog/`
+- backend CMS inside `cms/`
+
+These files were imported for controlled reuse and will be audited before refactoring.
